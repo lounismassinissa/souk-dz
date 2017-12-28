@@ -13,6 +13,13 @@
 		<spring.version>5.0.2.RELEASE</spring.version>
 	</properties>
 	<dependencies>
+
+		<!-- Link Backend project -->
+		<dependency>
+			<groupId>net</groupId>
+			<artifactId>soukBackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<!-- JAVA EE API -->
 		<dependency>
 			<groupId>javax</groupId>

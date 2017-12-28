@@ -4,9 +4,9 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 
-<spring:url var="css" value="resources/css" />
-<spring:url var="js" value="resources/js" />
-<spring:url var="images" value="resources/images" />
+<spring:url var="css" value="/resources/css" />
+<spring:url var="js" value="/resources/js" />
+<spring:url var="images" value="/resources/images" />
 
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
 
@@ -61,6 +61,12 @@
 			<c:if test="${userClickedContact == true }">
 				<%@ include file="contact.jsp"%>
 			</c:if>
+			
+			<!-- Load this section one user click products or category products -->
+			<c:if test="${userClickedAllProducts == true or userClickedCategoryProducts == true}">
+					<%@ include file="listProducts.jsp"%>
+			</c:if>
+			
 		</div>
 
 		<!-- Footer -->

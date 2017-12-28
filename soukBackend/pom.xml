@@ -13,6 +13,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<javaee.version>8.0</javaee.version>
+		<spring.version>5.0.2.RELEASE</spring.version>
 	</properties>
 	
 		
@@ -27,14 +28,22 @@
 			<version>${javaee.version}</version>
 			<scope>provided</scope>
 		</dependency>
-
+		
+		<!-- JUNIT -->
 		<dependency>
-			<!-- JUNIT -->
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- SPRING -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
 	</dependencies>
 	<build>
 		<plugins>
