@@ -12,7 +12,7 @@
    ">
    
    <context:component-scan base-package="net.souk.controller"/>
-   <context:component-scan base-package="net.soukBackend.daoimpl"/>
+   <context:component-scan base-package="net.soukBackend"/>
    
    <bean id="viewResolver"
    	     class="org.springframework.web.servlet.view.InternalResourceViewResolver">
